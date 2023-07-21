@@ -16,7 +16,7 @@ use crate::{convert_colors, BlendMode, Color, Gradient, GradientBuilder, Gradien
 /// # Ok(())
 /// # }
 /// ```
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct CatmullRomGradient {
     segments: Vec<[[f32; 4]; 4]>,
     positions: Vec<f32>,

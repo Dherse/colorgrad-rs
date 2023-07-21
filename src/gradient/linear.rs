@@ -13,7 +13,7 @@ use crate::{convert_colors, BlendMode, Color, Gradient, GradientBuilder, Gradien
 /// # Ok(())
 /// # }
 /// ```
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct LinearGradient {
     stops: Vec<(f32, [f32; 4])>,
     domain: (f32, f32),

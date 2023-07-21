@@ -27,7 +27,7 @@ fn basis(t1: f32, v0: f32, v1: f32, v2: f32, v3: f32) -> f32 {
 /// # Ok(())
 /// # }
 /// ```
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct BasisGradient {
     values: Vec<[f32; 4]>,
     positions: Vec<f32>,
